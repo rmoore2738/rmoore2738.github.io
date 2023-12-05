@@ -1,13 +1,17 @@
 
-He is currently pursuing a Master's Degree in computer science, at School of Computer Science and Technology, China University of Mining and Technology.
+PhD student at the University of Utah School of Computing, working with Jason Wiese in the PeDEL lab. 
 
 #### Email
-sli[at]cumt.edu.cn
+u1461543[at]umail.utah.edu
 
 #### Education
-2022.08 - present, Computer Science and Technology, School of Computer Science and Technology, China University of Mining and Technology.
+2023-present University of Utah - PhD in Computing, specializing in Human-Computer Interaction
 
-2018.08 - 2022.06, Data Science and Big Data Technology, School of Computer Science and Technology, China University of Mining and Technology.
+2021-2023 University of North Texas - MS in Artificial Intelligence with Specialization in Machine Learning
+
+2017-2021 University of Texas at Austin - BSA in Neuroscience with certificates in Computer Science and Forensic Science Research Intersts Human computer interaction, devices/wearables, and brain machine interfaces.
 
 #### Research Intersts
-Deep Learning, Artificial Intelligence Seismology, Mine Microseismic.
+Human computer interaction, devices/wearables, and brain machine interfaces.
+
+Passionate about integrating intelligent systems into everyday life and making technology accessible to all people
