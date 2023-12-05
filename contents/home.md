@@ -1,8 +1,7 @@
 
 PhD student at the University of Utah School of Computing, working with Jason Wiese in the PeDEL lab. 
 
-#### Email
-u1461543[at]umail.utah.edu
+Passionate about integrating intelligent systems into everyday life and making technology accessible to all people.
 
 #### Education
 2023-present University of Utah - PhD in Computing, specializing in Human-Computer Interaction
@@ -13,5 +12,3 @@ u1461543[at]umail.utah.edu
 
 #### Research Intersts
 Human computer interaction, devices/wearables, and brain machine interfaces.
-
-Passionate about integrating intelligent systems into everyday life and making technology accessible to all people
