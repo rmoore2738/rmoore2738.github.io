@@ -9,7 +9,7 @@ u1461543[at]umail.utah.edu
 
 2021-2023 University of North Texas - MS in Artificial Intelligence with Specialization in Machine Learning
 
-2017-2021 University of Texas at Austin - BSA in Neuroscience with certificates in Computer Science and Forensic Science Research Intersts Human computer interaction, devices/wearables, and brain machine interfaces.
+2017-2021 University of Texas at Austin - BSA in Neuroscience with certificates in Computer Science and Forensic Science 
 
 #### Research Intersts
 Human computer interaction, devices/wearables, and brain machine interfaces.
