@@ -27,13 +27,13 @@ header h1 {
   font-size: 2.5rem;
   margin: 0.5rem 0;
   font-weight: 600;
-  animation: fadeInDown 1.5s ease-out;
+  animation: fadeInDown 1.5s ease-out forwards;
 }
 
 header p {
   font-size: 1.2rem;
   margin: 0;
-  animation: fadeIn 2s ease-out;
+  animation: fadeIn 2s ease-out forwards;
 }
 
 /* About Section */
@@ -49,6 +49,7 @@ header p {
   max-width: 800px;
   opacity: 0;
   animation: fadeIn 1.5s ease-in forwards;
+  animation-delay: 0.5s;
 }
 
 .profile img {
@@ -88,46 +89,50 @@ section ul li {
   margin: 0.5rem 0;
 }
 
+#education {
+  opacity: 0;
+  animation: slideIn 1.5s ease-out forwards;
+  animation-delay: 1s;
+}
+
 /* Animations */
 @keyframes fadeIn {
-  from {
+  0% {
     opacity: 0;
   }
-  to {
+  100% {
     opacity: 1;
   }
 }
 
 @keyframes fadeInDown {
-  from {
+  0% {
     opacity: 0;
     transform: translateY(-20px);
   }
-  to {
+  100% {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
 @keyframes slideIn {
-  from {
+  0% {
     transform: translateX(-50px);
     opacity: 0;
   }
-  to {
+  100% {
     transform: translateX(0);
     opacity: 1;
   }
 }
 
-#education {
-  opacity: 0;
-  animation: slideIn 1.5s ease-out forwards;
-}
-
 /* Contact Section */
 #contact {
   text-align: center;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in forwards;
+  animation-delay: 1.5s;
 }
 
 .button {
@@ -153,3 +158,4 @@ footer {
   color: #AFDDE5;
   padding: 1rem 0;
 }
+
