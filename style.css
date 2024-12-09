@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #003135; /* Dark Teal */
@@ -47,82 +47,45 @@ header nav ul li a:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 10; /* Ensures text is above the image */
 }
 
 header h1 {
   font-size: 3rem;
-  animation: fadeInDown 1.5s ease-out;
+  margin: 0;
+  animation: slideIn 1.5s ease-out;
 }
 
 header p {
-  font-size: 1.5rem;
-  margin-top: 0.5rem;
-}
-
-/* About Section */
-#about {
-  display: flex;
-  align-items: center;
-  padding: 2rem;
-  background-color: #024950; /* Deep Green */
-}
-
-.profile img {
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  margin-right: 2rem;
-  border: 3px solid #0FA4AF;
-}
-
-.about-text h2 {
-  color: #0FA4AF;
-}
-
-.about-text p {
-  line-height: 1.8;
-}
-
-/* Sections */
-section {
-  padding: 2rem;
-  margin: 2rem 0;
-  background-color: #964734; /* Burnt Orange */
-  border-radius: 8px;
-}
-
-section h2 {
-  color: #0FA4AF;
-}
-
-/* Contact Section */
-#contact {
-  text-align: center;
-}
-
-.button {
-  display: inline-block;
-  background-color: #0FA4AF;
-  color: #003135;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  margin-top: 1rem;
-}
-
-.button:hover {
-  background-color: #AFDDE5;
+  font-size: 1.2rem;
+  margin: 0.5rem 0 0;
+  animation: fadeIn 2s ease-out;
 }
 
 /* Animations */
-@keyframes fadeInDown {
-  from {
+@keyframes slideIn {
+  0% {
+    transform: translate(-50%, -70%);
     opacity: 0;
-    transform: translateY(-20px);
   }
-  to {
+  100% {
+    transform: translate(-50%, -50%);
     opacity: 1;
-    transform: translateY(0);
   }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Fix for z-index and layering */
+.header-image {
+  position: relative;
+  z-index: 5;
 }
