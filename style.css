@@ -45,7 +45,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #EAEAEA;
+  color: #003135;
 }
 
 /* Main Content */
@@ -62,7 +62,7 @@ section {
 
 section#visualization {
   background-color: #003135; /* Match the background to focus on graph */
-  color: #EAEAEA;
+  color: #003135;
 }
 
 canvas {
@@ -79,7 +79,7 @@ canvas {
 
 #controls label {
   margin-right: 0.5rem;
-  color: #EAEAEA;
+  color: #003135;
 }
 
 #controls input[type="range"] {
@@ -88,14 +88,14 @@ canvas {
 
 #stimulus-value {
   margin-left: 0.5rem;
-  color: #FF7F3F; /* Burnt Orange for emphasis */
+  color: #964734; /* Burnt Orange for emphasis */
 }
 
 /* Footer */
 footer {
   text-align: center;
-  background-color: #264653; /* Dark Teal */
-  color: #EAEAEA;
+  background-color: #024950; /* Dark Teal */
+  color: #024950;
   padding: 1rem;
   margin-top: 2rem;
 }
