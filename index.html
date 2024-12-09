@@ -3,88 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Neuroscience Visualization | Portfolio</title>
+  <title>Portfolio | Home</title>
   <link rel="stylesheet" href="style.css">
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
   <header>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
+        <li><a href="neuron.html">Neuron Visualization</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
-    <h1>Interactive Neuroscience Visualization</h1>
+    <h1>Welcome to My Portfolio</h1>
   </header>
 
   <main>
-    <section id="about-project">
-      <h2>About This Project</h2>
-      <p>This interactive visualization demonstrates the action potential of neurons, showing how stimuli affect membrane potential. Users can adjust parameters to see real-time changes.</p>
+    <section>
+      <h2>About Me</h2>
+      <p>I am passionate about neuroscience, AI, and human-computer interaction. Explore my projects to see how I bridge science and technology.</p>
     </section>
 
-    <section id="visualization">
-      <h2>Interactive Visualization</h2>
-      <canvas id="actionPotential"></canvas>
-      <div id="controls">
-        <label for="stimulus">Stimulus Intensity:</label>
-        <input type="range" id="stimulus" min="0" max="100" value="50" oninput="updateSimulation(this.value)">
-        <span id="stimulus-value">50</span>
-      </div>
-    </section>
-
-    <section id="how-it-works">
-      <h2>How It Works</h2>
-      <p>The membrane potential is represented on the graph. Use the slider to increase or decrease the stimulus intensity and observe how it affects the neuron's firing.</p>
+    <section>
+      <h2>Featured Project</h2>
+      <p>Check out my interactive neuron visualization to learn about action potentials in a fun and engaging way!</p>
+      <a href="neuron.html" class="button">View Project</a>
     </section>
   </main>
 
   <footer>
     <p>&copy; 2024 [Your Name]. All rights reserved.</p>
   </footer>
-
-  <script>
-    const ctx = document.getElementById('actionPotential').getContext('2d');
-
-    const initialData = [-70, -55, 30, -70, -90, -70]; // Default neuron response
-    let currentData = [...initialData]; // Cloned to manipulate during simulation
-
-    const chart = new Chart(ctx, {
-      type: 'line',
-      data: {
-        labels: [0, 1, 2, 3, 4, 5], // Time steps
-        datasets: [{
-          label: 'Membrane Potential (mV)',
-          data: currentData,
-          borderColor: 'blue',
-          tension: 0.4
-        }]
-      },
-      options: {
-        responsive: true,
-        scales: {
-          x: { title: { display: true, text: 'Time (ms)' } },
-          y: { 
-            title: { display: true, text: 'Potential (mV)' },
-            min: -100,
-            max: 50 
-          }
-        }
-      }
-    });
-
-    function updateSimulation(stimulusValue) {
-      const intensity = parseInt(stimulusValue);
-      document.getElementById('stimulus-value').textContent = intensity;
-
-      // Simulate the data change based on stimulus intensity
-      currentData = initialData.map(value => value + intensity / 10 - 5);
-      chart.data.datasets[0].data = currentData;
-      chart.update();
-    }
-  </script>
 </body>
 </html>
 
