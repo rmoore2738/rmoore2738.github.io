@@ -1,116 +1,128 @@
 /* General Styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
   background-color: #003135; /* Dark Teal */
   color: #AFDDE5; /* Light Teal */
-  line-height: 1.6;
-}
-
-a {
-  color: #0FA4AF; /* Bright Teal */
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
+  overflow-x: hidden;
 }
 
 /* Header */
 header {
+  position: relative;
   text-align: center;
-  background-color: #024950; /* Deep Green */
-  color: #AFDDE5; /* Light Teal */
-  padding: 2rem;
+  color: #AFDDE5;
 }
 
-header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
+.header-image img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  filter: brightness(70%);
 }
 
-header p {
-  font-size: 1.2rem;
-  margin: 0;
-}
-
-/* Navigation */
-nav ul {
+header nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
   justify-content: center;
   gap: 1rem;
+  margin-top: 1rem;
 }
 
-nav ul li {
-  display: inline;
-}
-
-nav ul li a {
+header nav ul li a {
   color: #AFDDE5;
   font-weight: bold;
+  transition: color 0.3s;
 }
 
-nav ul li a:hover {
-  color: #0FA4AF; /* Bright Teal */
+header nav ul li a:hover {
+  color: #0FA4AF;
 }
 
-/* Main Content */
-main {
+.header-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+header h1 {
+  font-size: 3rem;
+  animation: fadeInDown 1.5s ease-out;
+}
+
+header p {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+/* About Section */
+#about {
+  display: flex;
+  align-items: center;
   padding: 2rem;
+  background-color: #024950; /* Deep Green */
 }
 
+.profile img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin-right: 2rem;
+  border: 3px solid #0FA4AF;
+}
+
+.about-text h2 {
+  color: #0FA4AF;
+}
+
+.about-text p {
+  line-height: 1.8;
+}
+
+/* Sections */
 section {
-  margin-bottom: 2rem;
-  padding: 1.5rem;
+  padding: 2rem;
+  margin: 2rem 0;
   background-color: #964734; /* Burnt Orange */
-  color: #AFDDE5; /* Light Teal for readability */
   border-radius: 8px;
 }
 
 section h2 {
-  color: #0FA4AF; /* Bright Teal */
-  margin-bottom: 1rem;
+  color: #0FA4AF;
 }
 
-/* Lists */
-section ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-section ul li {
-  margin-bottom: 1rem;
-}
-
-section ul li strong {
-  color: #AFDDE5; /* Light Teal for emphasis */
-}
-
-/* Footer */
-footer {
+/* Contact Section */
+#contact {
   text-align: center;
-  background-color: #024950; /* Deep Green */
-  color: #AFDDE5; /* Light Teal */
-  padding: 1rem;
-  margin-top: 2rem;
 }
 
-/* Buttons */
 .button {
   display: inline-block;
-  background-color: #0FA4AF; /* Bright Teal */
-  color: #003135; /* Dark Teal */
+  background-color: #0FA4AF;
+  color: #003135;
   padding: 0.5rem 1rem;
-  border-radius: 4px;
+  border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
+  margin-top: 1rem;
 }
 
 .button:hover {
-  background-color: #AFDDE5; /* Light Teal */
-  color: #003135; /* Dark Teal */
+  background-color: #AFDDE5;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
