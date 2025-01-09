@@ -18,6 +18,7 @@ body {
 .header-image-container {
   width: 100%;
   max-height: 300px;
+  background-position: bottom;
   overflow: hidden;
 }
 
@@ -116,7 +117,7 @@ section ul li {
 
 .button {
   display: inline-block;
-  background-color: #0FA4AF;
+  background-color: #964734;
   color: #003135; /* Dark Teal */
   padding: 0.5rem 1rem;
   border-radius: 5px;
