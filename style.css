@@ -31,7 +31,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #AFDDE5;
+  color: #036d80; /* dark teal */
   text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
   animation: fadeIn 2s ease-out forwards;
 }
