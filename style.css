@@ -1,141 +1,154 @@
-/* General Styles */
-body {
-  font-family: 'Raleway', sans-serif;
+/* Base Styles */
+* {
   margin: 0;
   padding: 0;
-  background-color: #003135; /* Dark Teal */
-  color: #aaf9ff; /* light light blue */
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #f6f9fc;
+  color: #2d2d2d;
   line-height: 1.6;
-  overflow-x: hidden;
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: #ffffffcc;
+  backdrop-filter: blur(10px);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #2d2d2d;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #1a73e8;
 }
 
 /* Header */
 .header {
-  position: relative;
+  padding-top: 60px; /* to accommodate nav */
   text-align: center;
+  position: relative;
 }
 
-.header-image-container {
+.header-image-container img {
   width: 100%;
+  height: auto;
   max-height: 300px;
-  overflow: hidden;
-}
-
-.header-image {
-  width: 100%;
-  height: 300px;
+  object-fit: cover;
+  filter: brightness(0.8);
 }
 
 .header-content {
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white; /* dark teal */
-  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-  animation: fadeIn 2s ease-out forwards;
+  color: white;
+  text-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
 }
 
-header h1 {
-  font-size: 3.5rem;
-  margin: 0;
-  font-weight: 600;
+.header-content h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
 }
 
-header p {
+.header-content p {
   font-size: 1.2rem;
-  margin: 0.5rem 0;
 }
 
 /* Sections */
 section {
-  margin: 2rem auto;
-  padding: 1.5rem;
-  background-color: #024950; /* Deep Green */
-  border-radius: 8px;
-  width: 90%;
-  max-width: 800px;
-  opacity: 0;
-  animation: fadeIn 1.5s ease-out forwards;
-}
-
-section h2 {
-  color: #aaf9ff; /* light light blue */
-  font-weight: 600;
-}
-
-section ul {
-  list-style: none;
-  padding: 0;
-}
-
-section ul li {
-  margin: 0.5rem 0;
-}
-
-/* About Section */
-#about {
+  padding: 3rem 1rem;
   display: flex;
-  align-items: center;
-  gap: 1rem;
+  justify-content: center;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
   padding: 2rem;
-  background-color: #964734; /* Burnt Orange */
+  max-width: 800px;
+  width: 100%;
+  transition: transform 0.2s ease;
 }
 
-.profile img {
-  width: 100px;
-  height: 100px;
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.about {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
-  border: 2px solid #0FA4AF; /* Bright Teal */
+  border: 3px solid #1a73e8;
+  object-fit: cover;
 }
 
-.about-text h2 {
-  color: #aaf9ff; /* light light blue */
-  margin-bottom: 1rem;
+/* Lists */
+ul {
+  list-style-type: none;
 }
 
-/* Animations */
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+li {
+  margin: 0.75rem 0;
 }
 
-.fade-in {
-  opacity: 0;
-  animation: fadeIn 1.5s ease-in forwards;
-}
-
-/* Contact Section */
-#contact {
-  text-align: center;
-  background-color: #964734; /* Burnt Orange */
-}
-
+/* Buttons */
 .button {
   display: inline-block;
-  background-color: #964734;
-  color: #003135; /* Dark Teal */
+  background-color: #1a73e8;
+  color: white;
   padding: 0.5rem 1rem;
-  border-radius: 5px;
+  border-radius: 6px;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 500;
   margin-top: 1rem;
+  transition: background-color 0.3s ease;
 }
 
 .button:hover {
-  background-color: #AFDDE5;
-  color: #003135;
+  background-color: #1661c1;
 }
 
 /* Footer */
 footer {
   text-align: center;
-  background-color: #024950; /* Deep Green */
-  color: #AFDDE5;
-  padding: 1rem 0;
+  padding: 2rem;
+  background-color: #f0f0f0;
+  font-size: 0.9rem;
+  color: #555;
 }
 
