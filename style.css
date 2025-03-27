@@ -81,6 +81,8 @@ body {
   font-size: 1.2rem;
 }
 
+
+
 /* Sections */
 section {
   padding: 3rem 1rem;
@@ -109,13 +111,35 @@ section {
   flex-wrap: wrap;
 }
 
+.about {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
 .profile-img {
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
+  max-width: 100%;
   border-radius: 50%;
   border: 3px solid #1a73e8;
   object-fit: cover;
+  flex-shrink: 0;
 }
+
+@media (max-width: 600px) {
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
 
 /* Lists */
 ul {
