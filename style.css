@@ -1,4 +1,4 @@
-/* Base Styles */
+/* Reset + Base */
 * {
   margin: 0;
   padding: 0;
@@ -16,118 +16,100 @@ body {
   line-height: 1.6;
 }
 
-/* Navigation Bar */
+/* Navbar */
 .navbar {
   background-color: #ffffffee;
   backdrop-filter: blur(8px);
   position: sticky;
   top: 0;
   z-index: 1000;
-  display: flex;
-  justify-content: center;
-  padding: 0.75rem 1rem;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
 }
 
 .navbar ul {
-  list-style: none;
   display: flex;
-  gap: 1.5rem;
-  margin: 0;
-  padding: 0;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+  list-style: none;
 }
 
 .navbar a {
   text-decoration: none;
   color: #2d2d2d;
   font-weight: 600;
-  padding: 0.5rem 0.75rem;
-  border-radius: 6px;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: color 0.3s;
 }
 
 .navbar a:hover {
-  background-color: #1a73e81a;
   color: #1a73e8;
 }
 
 /* Header */
 .header {
-  padding-top: 60px; /* to accommodate nav */
-  text-align: center;
   position: relative;
+  text-align: center;
+  margin-top: 0;
 }
 
 .header-image-container img {
   width: 100%;
-  height: auto;
-  max-height: 300px;
+  height: 300px;
   object-fit: cover;
-  filter: brightness(0.8);
+  filter: brightness(0.85);
 }
 
 .header-content {
   position: absolute;
-  top: 55%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  text-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 2px 5px rgba(0,0,0,0.5);
 }
 
 .header-content h1 {
   font-size: 3rem;
-  margin-bottom: 0.5rem;
 }
 
 .header-content p {
   font-size: 1.2rem;
 }
 
-
-
 /* Sections */
+main {
+  padding: 2rem 1rem;
+}
+
 section {
-  padding: 3rem 1rem;
+  margin-bottom: 3rem;
   display: flex;
   justify-content: center;
 }
 
 .card {
-  background: #ffffff;
+  background: white;
   border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
   padding: 2rem;
-  max-width: 800px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
   width: 100%;
-  transition: transform 0.2s ease;
+  max-width: 800px;
 }
 
-.card:hover {
-  transform: translateY(-4px);
-}
-
+/* About Section */
 .about {
   display: flex;
   gap: 2rem;
   align-items: center;
-  flex-wrap: wrap;
-}
-
-.about {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
   flex-wrap: wrap;
 }
 
 .profile-img {
   width: 100px;
   height: 100px;
-  max-width: 100%;
   border-radius: 50%;
-  border: 3px solid #1a73e8;
   object-fit: cover;
+  border: 3px solid #1a73e8;
   flex-shrink: 0;
 }
 
@@ -141,16 +123,6 @@ section {
     width: 80px;
     height: 80px;
   }
-}
-
-
-/* Lists */
-ul {
-  list-style-type: none;
-}
-
-li {
-  margin: 0.75rem 0;
 }
 
 /* Buttons */
@@ -174,8 +146,8 @@ li {
 footer {
   text-align: center;
   padding: 2rem;
-  background-color: #f0f0f0;
   font-size: 0.9rem;
   color: #555;
+  background-color: #f0f0f0;
 }
 
