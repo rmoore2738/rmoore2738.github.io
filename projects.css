@@ -97,17 +97,16 @@ body {
 
 .project-links {
   margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 
 .project-links .button {
-  background-color: #00d0ff;
-  color: #121826;
-  padding: 0.5rem 1rem;
-  border-radius: 6px;
-  text-decoration: none;
-  margin-right: 0.5rem;
-  font-weight: 600;
-  transition: background-color 0.3s;
+  flex: 1 1 auto;
+  min-width: 120px;
+  text-align: center;
+  white-space: nowrap;
 }
 
 .project-links .button:hover {
