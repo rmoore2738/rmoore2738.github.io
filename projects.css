@@ -98,13 +98,21 @@ body {
 .project-links {
   margin-top: 1rem;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   gap: 0.5rem;
+  justify-content: flex-start;
 }
 
 .project-links .button {
-  flex: 1 1 auto;
-  min-width: 120px;
+  padding: 0.6rem 1rem;
+  background-color: #00d0ff;
+  color: #121826;
+  font-weight: 600;
+  border-radius: 6px;
+  text-decoration: none;
+  flex: 1 1 140px;
+  max-width: 100%;
   text-align: center;
   white-space: nowrap;
 }
@@ -120,3 +128,10 @@ footer {
   background-color: #1a1f2b;
   color: #777;
 }
+
+@media (max-width: 500px) {
+  .project-links {
+    flex-direction: column;
+  }
+}
+
