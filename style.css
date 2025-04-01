@@ -64,13 +64,13 @@ body {
   top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #1a73e8;
+  color: white;
   text-shadow: 0 2px 5px rgba(0,0,0,0.5);
 }
 
 .header-content h1 {
   font-size: 3rem;
-  color: #1a73e8;
+  color: white;
   text-shadow: 0 2px 5px rgba(0,0,0,0.5);
 }
 
