@@ -61,7 +61,7 @@ body {
 
 .header-contents {
   position: absolute;
-  font-size: 5rem;
+  font-size: 2.5rem;
   top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
