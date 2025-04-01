@@ -70,6 +70,8 @@ body {
 
 .header-content h1 {
   font-size: 3rem;
+  color: #A9A9A9;
+  text-shadow: 0 2px 5px rgba(0,0,0,0.5);
 }
 
 .header-content p {
